@@ -1,11 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export function Header() {
-  // const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
     { href: "/", label: "ホーム" },

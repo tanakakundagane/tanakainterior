@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useInView } from "framer-motion";
-import { useRef, useState } from "react";
+import { useRef, } from "react";
 
 interface WorkCase {
   id: number;
