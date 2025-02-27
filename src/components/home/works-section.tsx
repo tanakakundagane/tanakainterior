@@ -4,8 +4,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 interface WorkCase {
   id: number;
@@ -41,7 +39,7 @@ const workCases: WorkCase[] = [
 export function WorksSection() {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
-  const [hoveredId, setHoveredId] = useState<number | null>(null);
+  // const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   const containerVariants = {
     hidden: { opacity: 0 },

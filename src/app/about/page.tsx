@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Phone, Mail, Clock, MapPin, Car, Train } from "lucide-react";
+import { Phone, Mail, MapPin, Car, Train } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
