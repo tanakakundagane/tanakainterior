@@ -11,13 +11,13 @@ import { FlooringSection } from "./services/flooring-section";
 import { CurtainSection } from "./services/curtain-section";
 import { DynocSection } from "./services/dynoc-section";
 
-interface WallpaperType {
-  id: number;
-  title: string;
-  features: string[];
-  recommendations: string[];
-  icon: string;
-}
+// interface WallpaperType {
+//   id: number;
+//   title: string;
+//   features: string[];
+//   recommendations: string[];
+//   icon: string;
+// }
 
 interface InstallationStep {
   step: number;
