@@ -38,10 +38,10 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold mb-4 text-white">会社情報</h4>
+            <h4 className="font-bold mb-4 text-white">会社概要</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/company" className="text-black hover:text-white">
+                <Link href="/about" className="text-black hover:text-white">
                   会社概要
                 </Link>
               </li>

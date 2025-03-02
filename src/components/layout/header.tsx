@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { MobileNav } from "./mobile-nav";
 
 export function Header() {
-
   const menuItems = [
     { href: "/", label: "ホーム" },
     { href: "/concept", label: "Concept" },
@@ -36,6 +36,8 @@ export function Header() {
               <Link href="/contact">無料見積もり</Link>
             </Button>
           </div>
+
+          <MobileNav />
         </nav>
       </div>
     </header>

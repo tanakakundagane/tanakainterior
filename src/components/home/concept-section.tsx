@@ -96,11 +96,11 @@ export function ConceptSection() {
 
             <motion.div variants={itemVariants} className="space-y-6">
               <h3 className="text-2xl md:text-3xl font-bold">
-                シンプル＆モダンな空間作り
+                迅速な対応で安心のサービスを提供
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                シンプルでモダンなデザインの壁紙を提案し、ミニマルでスタイリッシュな空間作りをサポート。
-                お客様の要望に沿った提案をさせていただきます。
+              お客様にご満足いただけるよう、スピーディーな対応を心がけています。
+              現地見積もりのご案内から施工日時の調整、ご連絡まで、できる限り早く対応 いたします。
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
