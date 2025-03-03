@@ -1,22 +1,38 @@
 "use client";
 
-import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetTitle,
+} from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const menuItems = [
-  { href: "/", label: "ホーム" },
-  { href: "/concept", label: "Concept" },
-  { href: "/works", label: "施工事例" },
-  { href: "/service", label: "サービス内容" },
-  { href: "/about", label: "会社概要" },
-  { href: "/contact", label: "お問い合わせ" },
-];
+interface MenuItem {
+  href: string;
+  label: string;
+}
 
-export function MobileNav() {
+interface MobileNavProps {
+  menuItems: MenuItem[];
+  handleScroll: (e: React.MouseEvent<HTMLAnchorElement>, href: string) => void;
+}
+
+export function MobileNav({ menuItems, handleScroll }: MobileNavProps) {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    if (href.startsWith("#")) {
+      handleScroll(e, href);
+    }
+    setIsOpen(false);
+  };
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -25,8 +41,10 @@ export function MobileNav() {
           <Menu className="w-6 h-6" />
         </button>
       </SheetTrigger>
-      <SheetContent side="right" className="w-[300px] bg-white/95 backdrop-blur-md">
-        {/* SheetTitleを追加（見出しとして利用） */}
+      <SheetContent
+        side="right"
+        className="w-[300px] bg-white/95 backdrop-blur-md"
+      >
         <SheetTitle className="sr-only">ナビゲーションメニュー</SheetTitle>
         <nav className="flex flex-col gap-6 mt-16">
           {menuItems.map((item, index) => (
@@ -36,13 +54,23 @@ export function MobileNav() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-              <Link
-                href={item.href}
-                className="text-lg font-medium hover:text-primary transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.label}
-              </Link>
+              {item.href.startsWith("#") ? (
+                <a
+                  href={item.href}
+                  className="text-lg font-medium hover:text-primary transition-colors"
+                  onClick={(e) => handleClick(e, item.href)}
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <Link
+                  href={item.href}
+                  className="text-lg font-medium hover:text-primary transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              )}
             </motion.div>
           ))}
           <motion.div

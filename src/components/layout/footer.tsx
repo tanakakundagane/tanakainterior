@@ -4,20 +4,19 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-500 text-gray-800 py-12">
+    <footer className="bg-slate-400 text-gray-800 py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4 text-white">
+            <h3 className="text-xl font-bold mb-4 text-gray-800">
               TanaakaInterior
             </h3>
-            <p className="text-white">
+            <p className="text-gray-800">
               美しい壁紙で理想の空間を創造する、 あなたの信頼できるパートナー
             </p>
           </div>
 
           <div>
-            <h4 className="font-bold mb-4 text-white">メニュー</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/works" className="text-black hover:text-white">
@@ -38,7 +37,6 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold mb-4 text-white">会社概要</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/about" className="text-black hover:text-white">
@@ -54,8 +52,8 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold mb-4 text-white">お問い合わせ</h4>
-            <p className="text-white">
+            <h4 className="font-bold mb-4 text-gray-800">お問い合わせ</h4>
+            <p className="text-gray-800">
               TEL: 03-XXXX-XXXX
               <br />
               営業時間: 9:00-18:00
@@ -65,7 +63,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-white">
+        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-800">
           <p>&copy; {currentYear} TanakaInterior All rights reserved.</p>
         </div>
       </div>

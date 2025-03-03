@@ -64,7 +64,7 @@ export function WorksSection() {
   };
 
   return (
-    <section ref={sectionRef} className="py-24 bg-gray-50">
+    <section ref={sectionRef} className="py-24 bg-background-deepgreen" id="works">
       <div className="container mx-auto px-4">
         <motion.div
           variants={containerVariants}
@@ -73,10 +73,10 @@ export function WorksSection() {
           className="max-w-6xl mx-auto"
         >
           <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-medium mb-6 text-gray-800">
-              Works
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-200">
+              施工事例
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-200 max-w-2xl mx-auto">
               私たちが手がけた施工事例をご紹介します。
               お客様一人ひとりのご要望に寄り添い、理想の空間を実現してきました。
             </p>
@@ -93,7 +93,7 @@ export function WorksSection() {
                   {/* <span className="text-primary text-sm font-medium">
                     {work.category}
                   </span> */}
-                  <h3 className="text-2xl md:text-3xl font-bold mt-2">
+                  <h3 className="text-2xl md:text-3xl font-bold mt-2 text-gray-200">
                     {work.title}
                   </h3>
                 </div>

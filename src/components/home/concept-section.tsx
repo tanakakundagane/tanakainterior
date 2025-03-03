@@ -35,6 +35,7 @@ export function ConceptSection() {
     <section
       ref={sectionRef}
       className="relative py-24 bg-[#FDF6F4] overflow-hidden"
+      id="concept"
     >
       {/* 装飾的な背景要素 */}
       <div className="absolute inset-0">

@@ -14,6 +14,7 @@ export default {
           DEFAULT: "#F5F3F0",
           darker: "#EBE7E2",
           lighter: "#FAF9F7",
+          deepgreen:"#256440",
         },
         beige: {
           50: "#FAF9F7",

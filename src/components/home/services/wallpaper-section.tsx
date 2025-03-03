@@ -84,7 +84,7 @@ const wallpaperTypes: WallpaperType[] = [
 
 export function WallpaperSection() {
   return (
-    <motion.div variants={itemVariants} className="mb-32">
+    <motion.div variants={itemVariants} className="mb-32 ">
       <h3 className="text-2xl md:text-3xl font-medium mb-12 text-center">
         クロスの種類と特徴
       </h3>

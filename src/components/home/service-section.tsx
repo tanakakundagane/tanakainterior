@@ -5,19 +5,11 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Phone, FileText, MessageCircle } from "lucide-react";
+import { Phone, FileText,  } from "lucide-react";
 import { WallpaperSection } from "./services/wallpaper-section";
 import { FlooringSection } from "./services/flooring-section";
 import { CurtainSection } from "./services/curtain-section";
 import { DynocSection } from "./services/dynoc-section";
-
-// interface WallpaperType {
-//   id: number;
-//   title: string;
-//   features: string[];
-//   recommendations: string[];
-//   icon: string;
-// }
 
 interface InstallationStep {
   step: number;
@@ -67,6 +59,18 @@ const priceList: PriceInfo[] = [
     service: "AA級",
     price: "1,250円～/㎡",
   },
+  {
+    service: "クッションフロア",
+    price: "2,500円～/㎡",
+  },
+  {
+    service: "フロアタイル",
+    price: "3,800円～/㎡",
+  },
+  {
+    service: "タイルカーペット張り替え",
+    price: "3,000円～/㎡",
+  },
 
   // ... 他の料金情報も定義
 ];
@@ -93,7 +97,7 @@ export function ServiceSection() {
   };
 
   return (
-    <section ref={sectionRef} className="py-24 bg-white">
+    <section ref={sectionRef} className="py-24 bg-beige-300" id="service">
       <div className="container mx-auto px-4">
         <motion.div
           variants={containerVariants}
@@ -103,8 +107,8 @@ export function ServiceSection() {
         >
           {/* ヘッダー */}
           <motion.div variants={itemVariants} className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-medium mb-6 text-gray-800">
-              Service
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
+              サービス内容
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               お客様のニーズに合わせた最適な施工と、確かな技術でお応えします。
@@ -148,7 +152,7 @@ export function ServiceSection() {
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="border-b-2 border-gray-200">
+                  <tr className="border-b-2 border-background-deepgreen">
                     <th className="py-4 px-6 text-left">施工内容</th>
                     <th className="py-4 px-6 text-right">料金（税別）</th>
                   </tr>
@@ -157,7 +161,7 @@ export function ServiceSection() {
                   {priceList.map((item, index) => (
                     <tr
                       key={index}
-                      className="border-b border-gray-100 hover:bg-gray-50"
+                      className="border-b border-background-deepgreen hover:bg-gray-50"
                     >
                       <td className="py-4 px-6">{item.service}</td>
                       <td className="py-4 px-6 text-right">{item.price}</td>
@@ -168,7 +172,7 @@ export function ServiceSection() {
             </div>
             <p className="text-sm text-gray-500 mt-4">
               ※
-              上記は参考価格です。お部屋の状況や施工面積によって変動しますので、
+              上記は参考価格です。お部屋の状況や施工面積,材料によって変動しますので、
               詳細なお見積もりはお問い合わせください。
             </p>
           </motion.div>
@@ -190,12 +194,12 @@ export function ServiceSection() {
                   お問い合わせフォーム
                 </Link>
               </Button>
-              <Button variant="outline" asChild className="gap-2">
+              {/* <Button variant="outline" asChild className="gap-2">
                 <Link href="/line">
                   <MessageCircle className="w-4 h-4" />
                   LINEで相談する
                 </Link>
-              </Button>
+              </Button> */}
               <Button variant="outline" asChild className="gap-2">
                 <Link href="tel:000-0000-0000">
                   <Phone className="w-4 h-4" />
