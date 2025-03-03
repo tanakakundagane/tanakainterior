@@ -135,7 +135,7 @@ export function WorksSection() {
                 </div>
 
                 <div className="mt-8 max-w-2xl mx-auto text-center">
-                  <p className="text-gray-600 mb-6">{work.description}</p>
+                  <p className="text-gray-200 mb-6">{work.description}</p>
                   {/* <Button variant="outline" asChild>
                     <Link href={`/works/${work.id}`}>詳しく見る</Link>
                   </Button> */}
