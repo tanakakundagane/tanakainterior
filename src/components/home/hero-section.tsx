@@ -54,16 +54,16 @@ export function HeroSection() {
           className="text-white max-w-2xl"
         >
           <h1 className="text-5xl md:text-6xl font-bold mb-6">美しい壁紙で</h1>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 ml-10">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 md:ml-10">
             理想の空間を
           </h1>
-          <p className="text-xl mb-8 pl-20">
+          <p className="text-xl mb-8 md:pl-20">
             プロフェッショナルな技術と豊富な経験で、
             お客様の理想の空間づくりをサポートいたします。
           </p>
-          <Button size="lg" asChild>
+          {/* <Button size="lg" asChild>
             <a href="/contact">無料見積もりを依頼する</a>
-          </Button>
+          </Button> */}
         </motion.div>
       </div>
 

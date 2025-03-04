@@ -3,9 +3,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { FileText } from "lucide-react";
 import { WallpaperSection } from "./services/wallpaper-section";
 import { FlooringSection } from "./services/flooring-section";
 import { CurtainSection } from "./services/curtain-section";
@@ -120,94 +117,6 @@ export function ServiceSection() {
           <FlooringSection />
           <CurtainSection />
           <DynocSection />
-
-          {/* 施工の流れ */}
-          <motion.div variants={itemVariants} className="mb-32">
-            <h3 className="text-2xl md:text-3xl font-medium mb-12 text-center">
-              施工の流れ
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {installationSteps.map((step) => (
-                <div
-                  key={step.step}
-                  className="relative flex gap-6 items-start p-6 rounded-xl bg-gray-50"
-                >
-                  <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0">
-                    {step.step}
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold mb-2">{step.title}</h4>
-                    <p className="text-gray-600">{step.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* 料金目安 */}
-          <motion.div variants={itemVariants}>
-            <h3 className="text-2xl md:text-3xl font-medium mb-12 text-center">
-              料金目安
-            </h3>
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead>
-                  <tr className="border-b-2 border-background-deepgreen">
-                    <th className="py-4 px-6 text-left">施工内容</th>
-                    <th className="py-4 px-6 text-right">料金（税別）</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {priceList.map((item, index) => (
-                    <tr
-                      key={index}
-                      className="border-b border-background-deepgreen hover:bg-gray-50"
-                    >
-                      <td className="py-4 px-6">{item.service}</td>
-                      <td className="py-4 px-6 text-right">{item.price}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <p className="text-sm text-gray-500 mt-4">
-              ※
-              上記は参考価格です。お部屋の状況や施工面積,材料によって変動しますので、
-              詳細なお見積もりはお問い合わせください。
-            </p>
-          </motion.div>
-
-          {/* お問い合わせ */}
-          <motion.div
-            variants={itemVariants}
-            className="mt-20 text-center bg-gray-50 rounded-2xl p-12"
-          >
-            <h3 className="text-2xl font-bold mb-6">無料お見積もり受付中！</h3>
-            <p className="text-gray-600 mb-8">
-              「どの壁紙が合うかわからない」「施工費用の目安が知りたい」など、
-              お気軽にご相談ください！
-            </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center">
-              <Button asChild className="gap-2">
-                <Link href="/contact">
-                  <FileText className="w-4 h-4" />
-                  お問い合わせフォーム
-                </Link>
-              </Button>
-              {/* <Button variant="outline" asChild className="gap-2">
-                <Link href="/line">
-                  <MessageCircle className="w-4 h-4" />
-                  LINEで相談する
-                </Link>
-              </Button> */}
-              {/* <Button variant="outline" asChild className="gap-2">
-                <Link href="tel:000-0000-0000">
-                  <Phone className="w-4 h-4" />
-                  お電話で相談する
-                </Link>
-              </Button> */}
-            </div>
-          </motion.div>
         </motion.div>
       </div>
     </section>

@@ -73,12 +73,10 @@ export function ConceptSection() {
           className="max-w-6xl mx-auto"
         >
           <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-medium mb-6 text-gray-800">
-              Concept
+            <h2 className="text-2xl md:text-4xl font-medium mb-6 text-gray-800">
+              お客様に寄り添い<br className="md:hidden" />
+              理想のインテリアを叶えます
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-              シンプルで洗練された空間へ。あなたの理想のインテリアを叶えます。
-            </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">

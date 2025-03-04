@@ -94,8 +94,8 @@ export function WallpaperSection() {
             key={type.id}
             className="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300"
           >
-            <div className="text-4xl mb-4">{type.icon}</div>
-            <h4 className="text-xl font-bold mb-4">{type.title}</h4>
+            {/* <div className="text-4xl mb-4">{type.icon}</div> */}
+            <h4 className="text-xl font-bold mb-4">◎{type.title}</h4>
             <div className="space-y-4">
               <div>
                 <h5 className="font-medium mb-2">特徴:</h5>
