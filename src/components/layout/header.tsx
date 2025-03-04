@@ -15,7 +15,7 @@ export function Header() {
     { href: "#works", label: "施工事例" },
     { href: "#service", label: "サービス内容" },
     { href: "/about", label: "会社概要" },
-    { href: "#contact", label: "お問い合わせ" },
+    { href: "/contact", label: "お問い合わせ" },
   ];
 
   const handleScroll = async (

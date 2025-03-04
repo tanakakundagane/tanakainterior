@@ -200,12 +200,12 @@ export function ServiceSection() {
                   LINEで相談する
                 </Link>
               </Button> */}
-              <Button variant="outline" asChild className="gap-2">
+              {/* <Button variant="outline" asChild className="gap-2">
                 <Link href="tel:000-0000-0000">
                   <Phone className="w-4 h-4" />
                   お電話で相談する
                 </Link>
-              </Button>
+              </Button> */}
             </div>
           </motion.div>
         </motion.div>
