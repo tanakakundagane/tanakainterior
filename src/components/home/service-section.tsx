@@ -5,7 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Phone, FileText,  } from "lucide-react";
+import { FileText } from "lucide-react";
 import { WallpaperSection } from "./services/wallpaper-section";
 import { FlooringSection } from "./services/flooring-section";
 import { CurtainSection } from "./services/curtain-section";
