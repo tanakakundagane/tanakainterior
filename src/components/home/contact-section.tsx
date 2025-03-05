@@ -13,15 +13,15 @@ export function ContactSection() {
         <div className="max-w-6xl mx-auto">
           <motion.div
             variants={itemVariants}
-            className="text-center bg-amber-600 rounded-2xl p-12 shadow-sm"
+            className="text-center  rounded-2xl p-12 "
           >
-            <h3 className="text-gray-50 text-2xl font-bold mb-6">無料お見積もり<br className="md:hidden"/>受付中！</h3>
-            <p className="text-gray-50 mb-8">
+            <h3 className="text-gray-800 text-2xl font-bold mb-6">無料お見積もり<br className="md:hidden"/>受付中！</h3>
+            <p className="text-gray-800 mb-8">
               「どの壁紙が合うかわからない」「施工費用の目安が知りたい」など、
               お気軽にご相談ください！
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center">
-              <Button asChild className="gap-2 bg-background-deepgreen hover:bg-gray-200 hover:text-background-deepgreen">
+              <Button asChild className="gap-2 bg-orange-700 hover:bg-white hover:text-orange-700">
                 <Link href="/contact">
                   <FileText className="w-4 h-4" />
                   お問い合わせフォーム

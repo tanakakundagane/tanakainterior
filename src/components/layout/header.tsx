@@ -11,7 +11,6 @@ export function Header() {
 
   const menuItems = [
     { href: "/", label: "ホーム" },
-    // { href: "#concept", label: "Concept" },
     { href: "#service", label: "サービス内容" },
     { href: "#works", label: "施工事例" },
     { href: "#price", label: "料金目安" },
@@ -77,7 +76,7 @@ export function Header() {
                 </Link>
               )
             )}
-            <Button variant="default" asChild className="bg-orange-700">
+            <Button variant="default" asChild className="bg-orange-700 hover:bg-white hover:text-orange-700">
               <Link href="/contact">お問い合わせ</Link>
             </Button>
           </div>
