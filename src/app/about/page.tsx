@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="py-24">
+    <main className="pb-24 pt-16">
       {/* ヘッダーセクション */}
       <section className="relative h-[300px] mb-24 overflow-hidden bg-[#FDF6F4]">
         <Image
@@ -193,7 +193,7 @@ export default function AboutPage() {
                     お問い合わせフォーム
                   </Link>
                 </Button>
-                <Button variant="outline" asChild className="gap-2">
+                {/* <Button variant="outline" asChild className="gap-2">
                   <Link href="/line">LINE公式アカウント</Link>
                 </Button>
                 <Button variant="outline" asChild className="gap-2">
@@ -201,7 +201,7 @@ export default function AboutPage() {
                     <Phone className="w-4 h-4" />
                     お電話で相談する
                   </Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </section>

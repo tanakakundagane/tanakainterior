@@ -12,10 +12,10 @@ interface ServiceItem {
 const services: ServiceItem[] = [
   { title: "壁紙の張り替え" },
   { title: "クッションフロアの張り替え" },
-  { title: "カーテンレールの取り付け・カーテンの取り換え" },
   { title: "カーペットタイルの施工" },
   { title: "絨毯の施工" },
   { title: "塩ビ系長尺床材の施工" },
+  { title: "カーテンレールの取り付け・カーテンの取り換え" },
 ];
 
 export function ServiceSection() {
