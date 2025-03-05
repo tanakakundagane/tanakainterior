@@ -80,10 +80,10 @@ export function MobileNav({ menuItems, handleScroll }: MobileNavProps) {
           >
             <Link
               href="/contact"
-              className="inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+              className="inline-block bg-orange-700 text-white px-6 py-3 rounded-lg hover:bg-white hover:text-orange-700 transition-colors"
               onClick={() => setIsOpen(false)}
             >
-              無料見積もり
+              お問い合わせ
             </Link>
           </motion.div>
         </nav>
