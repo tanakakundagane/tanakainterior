@@ -82,7 +82,7 @@ export function ConceptSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <motion.div
               variants={itemVariants}
-              className="relative h-[500px] rounded-2xl overflow-hidden shadow-lg"
+              className="relative mx-auto w-5/6 h-[300px] md:w-full md:h-[500px] rounded-2xl overflow-hidden shadow-lg"
             >
               <Image
                 src="/images/concept.jpg"

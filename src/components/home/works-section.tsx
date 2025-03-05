@@ -64,7 +64,7 @@ export function WorksSection() {
   };
 
   return (
-    <section ref={sectionRef} className="py-24 bg-background-deepgreen" id="works">
+    <section ref={sectionRef} className="pt-24 pb-16 bg-background-deepgreen" id="works">
       <div className="container mx-auto px-4">
         <motion.div
           variants={containerVariants}
@@ -98,9 +98,9 @@ export function WorksSection() {
                   </h3>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-2 gap-6">
                   <div className="relative">
-                    <div className="relative h-[400px] rounded-xl overflow-hidden">
+                    <div className="relative h-[200px] md:h-[400px] rounded-xl overflow-hidden">
                       <Image
                         src={work.beforeImage}
                         alt="施工前"
@@ -109,7 +109,7 @@ export function WorksSection() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                     </div>
-                    <div className="absolute top-4 left-4">
+                    <div className="pt-6 text-center md:pt-0 md:absolute md:top-4 md:left-4">
                       <span className="px-4 py-2 bg-white/90 text-gray-900 rounded-full text-sm font-medium shadow-md">
                         Before
                       </span>
@@ -117,7 +117,7 @@ export function WorksSection() {
                   </div>
 
                   <div className="relative">
-                    <div className="relative h-[400px] rounded-xl overflow-hidden">
+                    <div className="relative h-[200px] md:h-[400px] rounded-xl overflow-hidden">
                       <Image
                         src={work.afterImage}
                         alt="施工後"
@@ -126,7 +126,7 @@ export function WorksSection() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                     </div>
-                    <div className="absolute top-4 left-4">
+                    <div className="pt-6 text-center md:pt-0 md:absolute md:top-4 md:left-4">
                       <span className="px-4 py-2 bg-primary text-white rounded-full text-sm font-medium shadow-md">
                         After
                       </span>
