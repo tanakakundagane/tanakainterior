@@ -115,7 +115,7 @@ export default function ServicePage() {
       {/* サービス一覧 */}
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <section key={service.id} id={service.id} className="relative">
               {/* 装飾的な背景 */}
               <div
